@@ -2,14 +2,6 @@
 
 **Modern task management for remote teams** — Next.js 14, NestJS (Fastify), PostgreSQL, Prisma y Docker.
 
-## Screenshots
-
-Vistas representativas del producto (sustituye por capturas PNG reales si lo prefieres para la entrega académica).
-
-| Login | Dashboard | Kanban |
-|-------|-----------|--------|
-| ![Login](docs/screenshots/login.svg) | ![Dashboard](docs/screenshots/dashboard.svg) | ![Kanban](docs/screenshots/kanban.svg) |
-
 ## Features
 
 - JWT Authentication (register / login)
