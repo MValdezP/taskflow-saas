@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#020617"/>
+  <rect x="0" y="0" width="200" height="540" fill="#020617" stroke="#1e293b"/>
+  <text x="24" y="44" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="15" font-weight="700">TaskFlow</text>
+  <rect x="220" y="24" width="716" height="48" rx="10" fill="#0f172a" stroke="#1e293b"/>
+  <text x="244" y="54" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">TaskFlow MVP</text>
+  <g font-family="system-ui,sans-serif">
+    <rect x="220" y="90" width="170" height="420" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="236" y="118" fill="#94a3b8" font-size="11" font-weight="600">To Do</text>
+    <rect x="232" y="136" width="146" height="56" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="246" y="162" fill="#e2e8f0" font-size="11">Kanban polish</text>
+    <rect x="232" y="202" width="146" height="56" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="246" y="228" fill="#e2e8f0" font-size="11">E2E coverage</text>
+    <rect x="405" y="90" width="170" height="420" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="421" y="118" fill="#94a3b8" font-size="11" font-weight="600">In Progress</text>
+    <rect x="417" y="136" width="146" height="56" rx="8" fill="#312e81" stroke="#6366f1"/>
+    <text x="430" y="162" fill="#e0e7ff" font-size="11">Task CRUD API</text>
+    <rect x="590" y="90" width="170" height="420" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="606" y="118" fill="#94a3b8" font-size="11" font-weight="600">In Review</text>
+    <rect x="775" y="90" width="161" height="420" rx="10" fill="#0f172a" stroke="#1e293b"/>
+    <text x="791" y="118" fill="#94a3b8" font-size="11" font-weight="600">Done</text>
+    <rect x="787" y="136" width="137" height="56" rx="8" fill="#14532d" stroke="#22c55e"/>
+    <text x="800" y="162" fill="#dcfce7" font-size="11">Auth system</text>
+  </g>
+  <text x="480" y="525" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">Representación del tablero Kanban (4 columnas)</text>
+</svg>
