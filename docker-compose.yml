@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   db:
@@ -10,7 +9,7 @@ services:
       POSTGRES_PASSWORD: taskflow_secret
       POSTGRES_DB: taskflow_db
     ports:
-      - '5432:5432'
+      - '5435:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -24,9 +23,9 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: taskflow_migrate
-    command: ['bun', 'run', 'docker:migrate']
+    command: ['sh', '-c', 'sleep 10 && bun run docker:migrate']
     environment:
-      DATABASE_URL: postgresql://taskflow:taskflow_secret@db:5432/taskflow_db
+      DATABASE_URL: postgresql://taskflow:taskflow_secret@taskflow_db:5432/taskflow_db
     depends_on:
       db:
         condition: service_healthy
@@ -39,7 +38,7 @@ services:
     container_name: taskflow_backend
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://taskflow:taskflow_secret@db:5432/taskflow_db
+      DATABASE_URL: postgresql://taskflow:taskflow_secret@taskflow_db:5432/taskflow_db
       JWT_SECRET: super_secret_jwt_key_change_in_production
       JWT_EXPIRES_IN: 7d
       PORT: 3001

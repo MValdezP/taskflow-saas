@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     domains: ['api.dicebear.com'],
   },
+  output: 'standalone',
   async rewrites() {
     return [
       {
